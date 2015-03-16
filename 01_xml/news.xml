@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newss>
+	<news>
+   
+   <title>Exercice</title> 
+   
+   <description>Exercice du jour</description>
+   
+   <link></link>
+   
+   <items>
+        <item>
+            <title>actualité</title>
+            <description>Actualité</description>
+            <link></link>
+        </item>
+
+   </items>
+</news>
+
+ <news>
+    <title></title>
+
+    <description>Exercice du jour</description>
+    
+    <link></link>
+  
+  </news>
+ </newss>
