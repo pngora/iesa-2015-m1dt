@@ -5,10 +5,15 @@
       <title>geolicalisation</title>
       <meta charset ="UTF-8">
       <script>
-
+       // faire les commentaires ce soir 
        function myLocalisation(position){
-         alert(' lat : ' + position.coords.latitude + ' long : '+ position.coords.longitude + ' lalt : '+ position.coords.altitude );
+         var geoInfos ="Position déterminée :<br/>";
+         geoInfos += "Latitude : "+position.coords.latitude+"<br/>";
+         geoInfos += "Longitude : "+position.coords.longitude+"<br/>";
+         geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
+         document.getElementById("geolocalisation").innerHTML = geoInfos;
       }
+
 
        if (navigator.geolocation)
       {
@@ -18,11 +23,33 @@
       {
           alert("votre navigateur ne prend pas en compte la geolocalisation HTML5"); 
       }
+
+
+      function suiviPosition(myposition){
+       var geoInfos2 ="Position :<br/>";
+         geoInfos2 += "Latitude : "+myposition.coords.latitude+"<br/>";
+         geoInfos2 += "Longitude : "+myposition.coords.longitude+"<br/>";
+         geoInfos2 += "Altitude : "+myposition.coords.altitude+"<br/>";
+         geoInfos2 += "Vitesse : "+myposition.coords.speed;
+         document.getElementById("geolocalisationwp").innerHTML = geoInfos2;
+      }
+      
+       if (navigator.geolocation)
+      {
+          navigator.geolocation.watchPosition(suiviPosition);
+
+      }
+       else
+      {
+          alert("votre navigateur ne prend pas en compte la geolocalisation HTML5"); 
+      }
+      
       </script>
  </head>
 
  <body>
-   <div id="geolocalisation"></div>
+     <div id="geolocalisation">Zone présentant les informations de géolocalisation </div>
+     <div id="geolocalisationwp">Zone présentant les informations de géolocalisation </div>
  
  </body>
 <html>
