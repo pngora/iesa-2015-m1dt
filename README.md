@@ -15,3 +15,5 @@ daringfireball.net/projects/markdown/syntax
 #CSS
 * text-indent : permet l'indentation de la première ligne
 * letter-spacing: les espaces entre les lettres
+* pour les raccourcis (ex: padding : 10px(top), 20px(right), 15px(bottom), 20px(left))
+* important lorsqu'il y a pas de px la valeur prend celui de son opposé
