@@ -13,13 +13,14 @@
          geoInfos += "Longitude : "+position.coords.longitude+"<br/>";
          geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
          document.getElementById("geolocalisation").innerHTML = geoInfos;
+         new google.maps.Map(document.getElementById("map"),optionsGmaps);
       }
           var centerpos = new google.maps.LatLng(48.579400,7.7519);
 
           var optionsGmaps={
             center :centerpos,
             zoom: 15};
-           var map= new google.maps.Map(document.getElementById("map"),optionsGmaps);
+           var map;
 
           // mettre un verbe sur les méthodes (les parties en vert)
       function erreurPosition(error){
