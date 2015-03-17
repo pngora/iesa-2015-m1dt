@@ -17,3 +17,4 @@ daringfireball.net/projects/markdown/syntax
 * letter-spacing: les espaces entre les lettres
 * pour les raccourcis (ex: padding : 10px(top), 20px(right), 15px(bottom), 20px(left))
 * important lorsqu'il y a pas de px la valeur prend celui de son opposé
+* le border n'est pas le même suivant le navigateur
