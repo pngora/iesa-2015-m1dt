@@ -3,10 +3,10 @@ daringfireball.net/projects/markdown/syntax
 
 #GitHub
 
-*Renommage d'un fichier : git rm + chemin vers le fichier
-*Git pull : Sert à valider les modifications faite sur github 
+* Renommage d'un fichier : git rm + chemin vers le fichier
+* Git pull : Sert à valider les modifications faite sur github 
 
 
 #JavaScript
 
-*Google Map : mettre des dimensions dans la div
+* Google Map : mettre des dimensions dans la div
