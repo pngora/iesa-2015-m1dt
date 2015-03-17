@@ -14,7 +14,7 @@
 font-size: 20px;
 }
 #siteSub /*selecteur id*/ {
-font-size: 20px;
+font-size: 1.5em;
 font-family: verdana, arial, sans-serif;
 color: #ff8000;
 }
@@ -38,4 +38,5 @@ div p a /*le selecteur descendant*/{
 .bandeau-titre /*selecteur class*/ {
 font-size: 15px;
 font-family: verdana, arial, sans-serif;
+font-weight: bold;
 color: #ff8000;}
