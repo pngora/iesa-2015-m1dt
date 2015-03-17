@@ -5,7 +5,7 @@
       <title>geolicalisation</title>
       <meta charset ="UTF-8">
       <script>
-       // faire les commentaires ce soir 
+       
        function myLocalisation(position){
          var geoInfos ="Position déterminée :<br/>";
          geoInfos += "Latitude : "+position.coords.latitude+"<br/>";
@@ -13,16 +13,21 @@
          geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
          document.getElementById("geolocalisation").innerHTML = geoInfos;
       }
-
+          // mettre un verbe sur les méthodes (les parties en vert)
+      function monErreur(error){
+       var erreur = "Message d'erreur: "+error.message+"<br/>"; 
+      alert(erreur); // dans cette ligne, l'alert appelle la variable erreur 
+      } 
 
        if (navigator.geolocation)
       {
-          navigator.geolocation.getCurrentPosition(myLocalisation);
+          navigator.geolocation.getCurrentPosition(myLocalisation,monErreur); // les méthodes sont appelées dans cette ligne (c'est un callback)
       }
        else
       {
           alert("votre navigateur ne prend pas en compte la geolocalisation HTML5"); 
       }
+
 
 
       function suiviPosition(myposition){
