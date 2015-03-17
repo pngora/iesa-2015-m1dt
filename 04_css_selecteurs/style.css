@@ -12,23 +12,34 @@
 
 .bandeau-texte, li, #titre/*selecteur grouping*/{
 font-size: 20px;
+
 }
 #siteSub /*selecteur id*/ {
 font-size: 1.5em;
 font-family: verdana, arial, sans-serif;
 color: #ff8000;
+letter-spacing: 2em;
+line-height: 3em;
 }
 
 
 p /*balise*/{
 color: #ec9daf;
 font-family: 'Oswald';
+font-weight: bold;
+font-style: italic;
+font-size: 1em;
+font-variant: small-caps;
+text-transform: uppercase;
+text-align: justify;
+text-indent: 1em;
 }
 
 h1#firstHeading /*le selecteur spécifique*/ {
 font-size: 20px;
 font-family: verdana, arial, sans-serif;
 color: #3f8900;
+
 }
 
 div p a /*le selecteur descendant*/{
