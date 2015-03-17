@@ -14,6 +14,7 @@ body{
 
 	margin:0 auto;
 	width: 980px;
+	background-color:rgba(255,230,212,0.5); 
 }
 
 .bandeau-texte, li, #titre/*selecteur grouping*/{
