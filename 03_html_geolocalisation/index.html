@@ -4,6 +4,7 @@
  <head>
       <title>geolicalisation</title>
       <meta charset ="UTF-8">
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=set_to_true_or_false"></script>
       <script>
        
        function myLocalisation(position){
@@ -13,6 +14,13 @@
          geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
          document.getElementById("geolocalisation").innerHTML = geoInfos;
       }
+          var centerpos = new google.maps.LatLng(48.579400,7.7519);
+
+          var optionsGmaps={
+            center :centerpos,
+            zoom: 15};
+           var map= new google.maps.Map(document.getElementById("map"),optionsGmaps);
+
           // mettre un verbe sur les méthodes (les parties en vert)
       function erreurPosition(error){
        var info = "Erreur lors de la géolocalisation :" ; 
@@ -41,7 +49,7 @@
       {
           alert("votre navigateur ne prend pas en compte la geolocalisation HTML5"); 
       }
-
+         
 
 
       function suiviPosition(myposition){
@@ -69,6 +77,7 @@
  <body>
      <div id="geolocalisation">Zone présentant les informations de géolocalisation </div>
      <div id="geolocalisationwp">Zone présentant les informations de géolocalisation </div>
+     <div id="map" style="width=500px; height=400px">carte...</div>
  
  </body>
 <html>
