@@ -24,15 +24,19 @@ line-height: 3em;
 
 
 p /*balise*/{
-color: #ec9daf;
-font-family: 'Oswald';
-font-weight: bold;
-font-style: italic;
-font-size: 1em;
-font-variant: small-caps;
-text-transform: uppercase;
-text-align: justify;
-text-indent: 1em;
+	color: #ec9daf;
+	font-family: 'Oswald';
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1em;
+	font-variant: small-caps;
+	text-transform: uppercase;
+	text-align: justify;
+	text-indent: 1em;
+	background: #ffff00;
+	padding: 10px 20px 15px 20px;
+	border: 5px dotted  green;
+
 }
 
 h1#firstHeading /*le selecteur spécifique*/ {
