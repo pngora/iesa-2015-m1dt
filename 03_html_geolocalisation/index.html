@@ -2,29 +2,33 @@
 <html lang ="fr">
  
  <head>
-      <title>geolicalisation</title>
+      <title>geolocalisation</title>
       <meta charset ="UTF-8">
       <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=set_to_true_or_false"></script>
       <script>
        
-       function myLocalisation(position){
+      var centerpos = new google.maps.LatLng(48.579400,7.7519);
+
+      var optionsGmaps = {
+        center: centerpos,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        zoom: 15
+      };
+
+      function myLocalisation(position){
          var geoInfos ="Position déterminée :<br/>";
          geoInfos += "Latitude : "+position.coords.latitude+"<br/>";
          geoInfos += "Longitude : "+position.coords.longitude+"<br/>";
          geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
-         document.getElementById("geolocalisation").innerHTML = geoInfos;
-         new google.maps.Map(document.getElementById("map"),optionsGmaps);
-      }
-          var centerpos = new google.maps.LatLng(48.579400,7.7519);
 
-          var optionsGmaps={
-            center :centerpos,
-            zoom: 15};
-           var map;
+         document.getElementById("geolocalisation").innerHTML = geoInfos;
+         
+         
+      }
 
           // mettre un verbe sur les méthodes (les parties en vert)
       function erreurPosition(error){
-       var info = "Erreur lors de la géolocalisation :" ; 
+      var info = "Erreur lors de la géolocalisation :" ; 
       switch(error.code){
 
         case error.TIMEOUT :
@@ -60,6 +64,15 @@
          geoInfos2 += "Altitude : "+myposition.coords.altitude+"<br/>";
          geoInfos2 += "Vitesse : "+myposition.coords.speed;
          document.getElementById("geolocalisationwp").innerHTML = geoInfos2;
+
+         var map = new google.maps.Map(document.getElementById("map"), optionsGmaps);
+          var marker = new google.maps.Marker({
+            position:centerpos,
+            map: map,
+            title:"vous êtes ici",
+            icon:"fleche.png"
+
+          });
       }
       
        if (navigator.geolocation)
@@ -78,7 +91,7 @@
  <body>
      <div id="geolocalisation">Zone présentant les informations de géolocalisation </div>
      <div id="geolocalisationwp">Zone présentant les informations de géolocalisation </div>
-     <div id="map" style="width=500px; height=400px">carte...</div>
+     <div id="map" style="width:500px; height:400px;"></div>
  
  </body>
 <html>
