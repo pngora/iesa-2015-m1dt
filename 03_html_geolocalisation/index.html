@@ -15,7 +15,7 @@
         zoom: 15
       };
 
-      function myLocalisation(position){
+      function Localisation(position){
          var geoInfos ="Position déterminée :<br/>";
          geoInfos += "Latitude : "+position.coords.latitude+"<br/>";
          geoInfos += "Longitude : "+position.coords.longitude+"<br/>";
@@ -48,7 +48,7 @@
 
        if (navigator.geolocation)
       {
-          navigator.geolocation.getCurrentPosition(myLocalisation,erreurPosition); // les méthodes sont appelées dans cette ligne (c'est un callback)
+          navigator.geolocation.getCurrentPosition(Localisation,erreurPosition); // les méthodes sont appelées dans cette ligne (c'est un callback)
       }
        else
       {
@@ -57,7 +57,7 @@
          
 
 
-      function suiviPosition(myposition){
+      function suiviPosition(myposition){// important, il faut que la variable map soit dans une function qui soit appeler
        var geoInfos2 ="Position :<br/>";
          geoInfos2 += "Latitude : "+myposition.coords.latitude+"<br/>";
          geoInfos2 += "Longitude : "+myposition.coords.longitude+"<br/>";
