@@ -1,17 +1,28 @@
-#firstHeading {
+.bandeau-texte, li, #titre/*selecteur grouping*/{
+font-size: 20px;
+}
+#siteSub /*selecteur id*/ {
 font-size: 20px;
 font-family: verdana, arial, sans-serif;
 color: #ff8000;
 }
 
-p {
+
+p /*balise*/{
+color: #051153;
+}
+
+h1#firstHeading /*le selecteur spécifique*/ {
+font-size: 20px;
+font-family: verdana, arial, sans-serif;
+color: #3f8900;
+}
+
+div p a /*le selecteur descendant*/{
+	color: #ffc3a0;
+}
+
+.bandeau-titre /*selecteur class*/ {
 font-size: 15px;
 font-family: verdana, arial, sans-serif;
-color: #ff8000;
-
-}
-
-.toctext {
-
-
-}
+color: #ff8000;}
