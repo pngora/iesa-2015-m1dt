@@ -1,3 +1,6 @@
+body{
+	
+}
 .bandeau-texte, li, #titre/*selecteur grouping*/{
 font-size: 20px;
 }
@@ -9,7 +12,7 @@ color: #ff8000;
 
 
 p /*balise*/{
-color: #051153;
+color: #ec9daf;
 }
 
 h1#firstHeading /*le selecteur spécifique*/ {
