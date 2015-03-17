@@ -1,6 +1,15 @@
-body{
-	
+
+@font-face{
+	font-family: 'Oswald';
+	src: url('Oswald-Light.ttf') format ('trueType');
 }
+
+#content{
+
+	margin:0 auto;
+	width: 980px;
+}
+
 .bandeau-texte, li, #titre/*selecteur grouping*/{
 font-size: 20px;
 }
@@ -13,6 +22,7 @@ color: #ff8000;
 
 p /*balise*/{
 color: #ec9daf;
+font-family: 'Oswald';
 }
 
 h1#firstHeading /*le selecteur spécifique*/ {
