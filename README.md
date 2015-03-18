@@ -6,7 +6,7 @@ daringfireball.net/projects/markdown/syntax
 * code commençant par 1 : information
 * code commençant par 2 : Succès
 * code commençant par 3 : Redirection
-* code commençant par 4 : Erreur du client / du serveur web
+* code commençant par 4 : Erreur du client 
 * code commençant par 5 : Erreur du serveur / du serveur d'application
 
 
@@ -31,6 +31,35 @@ daringfireball.net/projects/markdown/syntax
 * On n'est pas obligé de mettre un var pour definir une nouvelle valeur
 * CASE SENSITIVE 
 * une varible peut avoir plusieurs types (numérique,float,booléen,string)
+* condition : avec les if, les for, while
+* struture du if : if (condition (doit être soit vrai ou faux)){}
+* Les opérateurs logiques :
+	+	opérateur d'addition	Ajoute deux valeurs	
+	-	opérateur de soustraction	Soustrait deux valeurs	
+	*	opérateur de multiplication	Multiplie deux valeurs	
+	/	plus: opérateur de division	Divise deux valeurs	
+	=	opérateur d'affectation	Affecte une valeur à une variable	x=3	Met la valeur 3 dans la variable 
+	%	opérateur modulo	Retourne le reste de la division entière de l'opérande de gauche par celle de droite
+
+* Les opérateurs d'affectation :
+
+* Les opérateurs de comparaison :==
+==opérateur d'égalité	Compare deux valeurs et vérifie leur égalité	
+===	opérateur d'identité	Vérifie l'identité de valeur et de type de deux valeurs	a===b	Retourne True si a est égal à b et est de même type, sinon False
+!=	opérateur de différence	Vérifie qu'une variable est différente d'une valeur 	x!=3	Retourne 1 si X est différent de 3, sinon 0
+!==	opérateur de non identité	Vérifie la non identité de valeur et de type de deux valeurs, c'est-à-dire si les deux valeurs n'ont pas la même valeur ou bien sont de types différents.	a!==b	Retourne True si a est différent de b ou bien est de type différent, sinon False
+<	opérateur d'infériorité stricte	Vérifie qu'une variable est strictement inférieure à une valeur 	x<3	Retourne True si X est inférieur à 3, sinon False
+<=	opérateur d'infériorité	Vérifie qu'une variable est inférieure ou égale à une valeur 	x<=3	Retourne True si X est inférieur ou égale à 3, sinon False
+>	opérateur de supériorité stricte	Vérifie qu'une variable est strictement supérieure à une valeur 	x>3	Retourne True si X est supérieur à 3, sinon False
+>=	opérateur de supériorité	Vérifie qu'une variable est supérieure ou égale à une valeur 	x>=3	Retourne True si X est supérieur ou égal à 3, sinon False
+
+
+* Les opérateurs d'incrémentation :
+* Les opérateurs de calcul :
+* Le point virgule n'est pas obligé pour les if 
+* Entre les accolades il y a un bloc de code
+* On peut enchainer les if  mais ce n'est pas bien
+* Syntaxe if(){} else if(){} et else 
 
 
 #CSS
