@@ -33,7 +33,12 @@ daringfireball.net/projects/markdown/syntax
 * une varible peut avoir plusieurs types (numérique,float,booléen,string)
 * condition : avec les if, les for, while
 * struture du if : if (condition (doit être soit vrai ou faux)){}
+* on peut mettre plusieurs variable dans une console.log avec console.log(a+" "+b) ou console.log(a,b);
+* il y a plusieurs consoles .error,debug,warn,info
+
+
 * Les opérateurs logiques :
+
 	+	opérateur d'addition	Ajoute deux valeurs	
 	-	opérateur de soustraction	Soustrait deux valeurs	
 	*	opérateur de multiplication	Multiplie deux valeurs	
@@ -41,9 +46,8 @@ daringfireball.net/projects/markdown/syntax
 	=	opérateur d'affectation	Affecte une valeur à une variable	x=3	Met la valeur 3 dans la variable 
 	%	opérateur modulo	Retourne le reste de la division entière de l'opérande de gauche par celle de droite
 
-* Les opérateurs d'affectation :
+* Les opérateurs de comparaison :
 
-* Les opérateurs de comparaison :==
 == opérateur d'égalité	Compare deux valeurs et vérifie leur égalité	
 ===	opérateur d'identité	Vérifie l'identité de valeur et de type de deux valeurs	a===b	
 !=	opérateur de différence	Vérifie qu'une variable est différente d'une valeur 	
@@ -54,8 +58,6 @@ daringfireball.net/projects/markdown/syntax
 >=	opérateur de supériorité	Vérifie qu'une variable est supérieure ou égale à une valeur 	
 
 
-* Les opérateurs d'incrémentation :
-* Les opérateurs de calcul :
 * Le point virgule n'est pas obligé pour les if 
 * Entre les accolades il y a un bloc de code
 * On peut enchainer les if  mais ce n'est pas bien
