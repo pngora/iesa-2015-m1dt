@@ -18,7 +18,7 @@ daringfireball.net/projects/markdown/syntax
 * mkdir pour rajouter un fichier
 * cd .. pour revenir à la racine du dossier 
 * git checkout . pour supprimer la précedente sauvegarde
-
+* pour travailler à partir de mon ordinateur pour cela il faut commencer par faire un mkdir ensuite créer un nouveau fichier abec cd avec le nom du fichier (important ne pas oublier de mettre un espace entre le cd et le nom du fichier et ensuite il faut faire git clone.
 
 #JavaScript
 
@@ -63,6 +63,22 @@ daringfireball.net/projects/markdown/syntax
 * On peut enchainer les if  mais ce n'est pas bien
 * Syntaxe if(){} else if(){} et else 
 
+##boucle
+ *syntaxe de la boucle while 
+ while(condition){
+ il faut pas oublier de mettre un ++
+}
+
+* syntaxe de la boucle do while
+do{}while(condition){}
+
+* syntaxe de la boucle for 
+for (var i=1; i<10; i++){console.log(i)}
+deux instructions avec break et continue (mais cela n'est pas recommandable)
+
+##functions
+* les parametres pouvent avoir le même nom vu qu'ils sont dans des functions différentes
+* Ne pas oublier de mettre des parametres entre virgule
 
 #CSS
 * text-indent : permet l'indentation de la première ligne
