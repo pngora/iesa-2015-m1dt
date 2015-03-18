@@ -13,10 +13,10 @@ daringfireball.net/projects/markdown/syntax
 
 #GitHub
 
-* Renommage d'un fichier : git rm + chemin vers le fichier
-* Git pull : Sert à valider les modifications faite sur github 
+* Supprimer un fichier : git rm + chemin vers le fichier
+* Git pull : récuperer les modifications faite sur github 
 * mkdir pour rajouter un fichier
-* cd.. pour revenir à la racine du dossier 
+* cd .. pour revenir à la racine du dossier 
 * git checkout . pour supprimer la précedente sauvegarde
 
 
@@ -44,14 +44,14 @@ daringfireball.net/projects/markdown/syntax
 * Les opérateurs d'affectation :
 
 * Les opérateurs de comparaison :==
-==opérateur d'égalité	Compare deux valeurs et vérifie leur égalité	
-===	opérateur d'identité	Vérifie l'identité de valeur et de type de deux valeurs	a===b	Retourne True si a est égal à b et est de même type, sinon False
-!=	opérateur de différence	Vérifie qu'une variable est différente d'une valeur 	x!=3	Retourne 1 si X est différent de 3, sinon 0
-!==	opérateur de non identité	Vérifie la non identité de valeur et de type de deux valeurs, c'est-à-dire si les deux valeurs n'ont pas la même valeur ou bien sont de types différents.	a!==b	Retourne True si a est différent de b ou bien est de type différent, sinon False
-<	opérateur d'infériorité stricte	Vérifie qu'une variable est strictement inférieure à une valeur 	x<3	Retourne True si X est inférieur à 3, sinon False
-<=	opérateur d'infériorité	Vérifie qu'une variable est inférieure ou égale à une valeur 	x<=3	Retourne True si X est inférieur ou égale à 3, sinon False
->	opérateur de supériorité stricte	Vérifie qu'une variable est strictement supérieure à une valeur 	x>3	Retourne True si X est supérieur à 3, sinon False
->=	opérateur de supériorité	Vérifie qu'une variable est supérieure ou égale à une valeur 	x>=3	Retourne True si X est supérieur ou égal à 3, sinon False
+== opérateur d'égalité	Compare deux valeurs et vérifie leur égalité	
+===	opérateur d'identité	Vérifie l'identité de valeur et de type de deux valeurs	a===b	
+!=	opérateur de différence	Vérifie qu'une variable est différente d'une valeur 	
+!==	opérateur de non identité	Vérifie la non identité de valeur et de type de deux valeurs, c'est-à-dire si les deux valeurs n'ont pas la même valeur ou bien sont de types différents
+<	opérateur d'infériorité stricte	Vérifie qu'une variable est strictement inférieure à une valeur 	
+<=	opérateur d'infériorité	Vérifie qu'une variable est inférieure ou égale à une valeur 
+>	opérateur de supériorité stricte	Vérifie qu'une variable est strictement supérieure à une valeur 	
+>=	opérateur de supériorité	Vérifie qu'une variable est supérieure ou égale à une valeur 	
 
 
 * Les opérateurs d'incrémentation :
