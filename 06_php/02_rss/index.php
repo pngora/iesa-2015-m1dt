@@ -36,7 +36,13 @@
 				"date"=>"Thu, 19 Mar 2015 10:16:44 GMT"
 
 			);;
-$Tunisiens["title"]
+		
+		function actualite($titre){
+			echo "<ul>";;
+			echo "<li>".$titre["title"]."<li>";;
+			echo "</ul>";;
+		}
+       actualite($Tunisiens);;
 	?>
 </body>
 </html>
