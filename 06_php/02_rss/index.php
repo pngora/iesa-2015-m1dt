@@ -4,7 +4,7 @@
 </head>
 <body>
 	<?php 
-		$Tunisiens = array(
+		$tunisiens = array(
 
 				"title" =>"Des Tunisiens manifestent pour dénoncer l'attaque sanglante",
 				"en"=>"en",
@@ -36,13 +36,19 @@
 				"date"=>"Thu, 19 Mar 2015 10:16:44 GMT"
 
 			);;
-		
-		function actualite($titre){
-			echo "<ul>";;
+
+		function buildRows($titre){
+			/*echo "<ul>";;
 			echo "<li>".$titre["title"]."<li>";;
-			echo "</ul>";;
+			echo "</ul>";;*/
+			$html = <tr>
+			foreach ($titre as $key => $value) {
+			echo "<td>".$value."</td>";;
+			}
+    	$html = </tr>
 		}
-       actualite($Tunisiens);;
+       buildRows($tunisiens);;
+
 	?>
 </body>
 </html>
