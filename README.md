@@ -1,5 +1,5 @@
 daringfireball.net/projects/markdown/syntax
-
+pragprog
 # iesa-2015-m1dt 
 
 #Liste de code 
@@ -16,7 +16,8 @@ daringfireball.net/projects/markdown/syntax
 * Supprimer un fichier : git rm + chemin vers le fichier
 * Git pull : récuperer les modifications faite sur github 
 * mkdir pour rajouter un fichier
-* cd .. pour revenir à la racine du dossier 
+* cd .. pour revenir à la racine du dossier
+* cd + le glisser-deposer du fichier pour rentrer 
 * git checkout . pour supprimer la précedente sauvegarde
 * pour travailler à partir de mon ordinateur pour cela il faut commencer par faire un mkdir ensuite créer un nouveau fichier abec cd avec le nom du fichier (important ne pas oublier de mettre un espace entre le cd et le nom du fichier et ensuite il faut faire git clone.
 
@@ -87,3 +88,21 @@ deux instructions avec break et continue (mais cela n'est pas recommandable)
 * important lorsqu'il y a pas de px la valeur prend celui de son opposé
 * le border n'est pas le même suivant le navigateur
 
+#PHP
+*echo permet d'afficher 
+*Les variables sont créée à partir l'un "$"
+* global permet à la fonction de voir les variables en dehors de la fonction
+* Les variables dynamique = $$ 
+* les constantes ne peut etre modifié. normalement elles sont en maj. Pour definir une constante il faut mettre define.
+*le mot-clé const = 
+*Les types de données
+9 types en php
+type scalaire = booleen, interger,float,string
+type composes = array, object
+type speciaux = resource et NULL
+var_dump(le type de variable + valeur)
+gettype = type de variable
+=> permet de faire des égales
+pour creer un tableau, il faut utiliser array ()
+exemple avec $[] pour rajouter un element dans un tableau.
+on peut faire des tableaux dans des tableaux 
