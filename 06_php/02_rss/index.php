@@ -39,29 +39,32 @@
 
 		$actualites = array($a1, $a2, $a3);
 
-		function buildTable($actualites){
+		function buildTable($actualites, $wantedProperties){
 			$html = '<table border="1">';
+			
 			foreach ($actualites as $actualite) {
-				$html .= buildRow($actualite);;
+				$html .= buildRow($actualite, $wantedProperties);;
 			}
+
     		$html .= '</table>';
     		return $html;
 		}
 
-		function buildRow($actualite){
+		function buildRow($actualite, $wantedProperties){
 			/*echo "<ul>";;
 			echo "<li>".$titre["title"]."<li>";;
 			echo "</ul>";;*/
 			$html = '<tr>';
-			foreach ($actualite as $key => $value) {
-				$html .= "<td>".$value."</td>";;
+			foreach ($wantedProperties as $property) {
+				$html .= "<td>".$actualite[$property]."</td>";;
 			}
 			
     		$html .= '</tr>';
     		return $html;
 		}
       	
-      	echo buildTable($actualites);;
+      	$wantedProperties = array('title', 'date');
+      	echo buildTable($actualites, $wantedProperties);;
 
 	?>
 </body>
