@@ -4,7 +4,7 @@
 </head>
 <body>
 	<?php 
-		$tunisiens = array(
+		$a1 = array(
 
 				"title" =>"Des Tunisiens manifestent pour dénoncer l'attaque sanglante",
 				"en"=>"en",
@@ -15,7 +15,7 @@
 
 			);;
 
-		$salonDuLivre = array(
+		$a2 = array(
 
 				"title" =>"Le Salon du livre dans le regard de Micaël",
 				"en"=>"en",
@@ -26,7 +26,7 @@
 
 			);;
 
-		$salonDuLivre = array(
+		$a3 = array(
 
 				"title" =>"Tunisie : l'un des deux assaillants était surveillé par les services de sécurité",
 				"en"=>"en",
@@ -37,17 +37,31 @@
 
 			);;
 
-		function buildRows($titre){
+		$actualites = array($a1, $a2, $a3);
+
+		function buildTable($actualites){
+			$html = '<table border="1">';
+			foreach ($actualites as $actualite) {
+				$html .= buildRow($actualite);;
+			}
+    		$html .= '</table>';
+    		return $html;
+		}
+
+		function buildRow($actualite){
 			/*echo "<ul>";;
 			echo "<li>".$titre["title"]."<li>";;
 			echo "</ul>";;*/
-			$html = <tr>
-			foreach ($titre as $key => $value) {
-			echo "<td>".$value."</td>";;
+			$html = '<tr>';
+			foreach ($actualite as $key => $value) {
+				$html .= "<td>".$value."</td>";;
 			}
-    	$html = </tr>
+			
+    		$html .= '</tr>';
+    		return $html;
 		}
-       buildRows($tunisiens);;
+      	
+      	echo buildTable($actualites);;
 
 	?>
 </body>
