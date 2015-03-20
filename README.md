@@ -5,6 +5,7 @@ les livres numériques : http://www.liberation.fr/culture/2015/03/05/la-france-s
 
 # iesa-2015-m1dt (nom de mon dossier)
 
+pour les \"\" quand on a les doubles cotes
 #Liste de code 
 * code commençant par 1 : information
 * code commençant par 2 : Succès
@@ -80,10 +81,12 @@ do{}while(condition){}
 * syntaxe de la boucle for 
 for (var i=1; i<10; i++){console.log(i)}
 deux instructions avec break et continue (mais cela n'est pas recommandable)
-
+* L'interpreteur affiche tj la date de la même façon (voir exo dates.html javascript)
 ##functions
 * les parametres pouvent avoir le même nom vu qu'ils sont dans des functions différentes
 * Ne pas oublier de mettre des parametres entre virgule
+
+
 
 #CSS
 * text-indent : permet l'indentation de la première ligne
@@ -141,3 +144,15 @@ foreach ($variable as $key => $value) {
 	et la valeur c'est ceux qui a apres.
 
 *$xml = simplexml_load_string($string); c'est la syntaxe pour ranger des xml
+*Parse error: syntax error, unexpected end of file in C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\m1dt\iesa-2015-m1dt\06_php\03_form\bad_form.php on line 26
+C'est une erreur de php donc reprendre tt les règles de php pour comprendre
+
+pour faire une redirection sur php <?php
+
+	header('Location: index.php?nom='.$_POST["nom"].'&prenom='.$_POST["prenom"]);
+
+?>
+
+Ne pas oublier le . pour le plus
+
+Ne pas retourner le set pour les dates
