@@ -14,12 +14,21 @@
 QUnit.test("that addition succed",
 		function(assert) {
 			assert.equal(600,add(200,400),"resultat 600"); 
+			assert.equal(105,add(10,'5'),"resultat 600"); 
 		}
 	);
 
 QUnit.test("that addition succed",
 		function(assert) {
-			assert.equal(22,add(10,12),"resultat 600"); 
+			assert.equal(22,isNaN(add(10)),"resultat 600"); 
+
+		}
+	);
+QUnit.test("Mon test est faux",
+		function(assert) {
+			assert.ok(isNaN(add(10)),false); 
+			assert.ok(isNaN(add(10,'5')),false); 
+
 		}
 	);
 
