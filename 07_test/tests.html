@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang ="fr">
+<head>
+	<meta charset ="UTF-8">
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/qunit/qunit-git.css"/>
+	<script src="http://code.jquery.com/qunit/qunit-git.js"></script>
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script>
+	QUnit.test("le test",
+		function(assert) {
+			assert.equal(1,1,"1 expected");
+		}
+	);
+
+	QUnit.test("le test",
+		function(assert) {
+			assert.equal(1,2,"1 expected");
+		}
+	);
+
+	/*QUnit.test("le test",
+		function(assert) {
+			assert.noEqual(1,1,"1 expected");
+		}
+	);*/
+	</script>
+</body>
+</html>
