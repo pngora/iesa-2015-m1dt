@@ -1,6 +1,9 @@
 daringfireball.net/projects/markdown/syntax
 pragprog
-# iesa-2015-m1dt 
+
+les livres numériques : http://www.liberation.fr/culture/2015/03/05/la-france-sommee-de-relever-la-tva-pour-les-livres-numeriques_1214767
+
+# iesa-2015-m1dt (nom de mon dossier)
 
 #Liste de code 
 * code commençant par 1 : information
@@ -20,6 +23,7 @@ pragprog
 * cd + le glisser-deposer du fichier pour rentrer 
 * git checkout . pour supprimer la précedente sauvegarde
 * pour travailler à partir de mon ordinateur pour cela il faut commencer par faire un mkdir ensuite créer un nouveau fichier abec cd avec le nom du fichier (important ne pas oublier de mettre un espace entre le cd et le nom du fichier et ensuite il faut faire git clone.
+* tj etre à la racine
 
 #JavaScript
 
@@ -90,6 +94,7 @@ deux instructions avec break et continue (mais cela n'est pas recommandable)
 
 #PHP
 *echo permet d'afficher 
+phpinfo = pour voir les infos
 *Les variables sont créée à partir l'un "$"
 * global permet à la fonction de voir les variables en dehors de la fonction
 * Les variables dynamique = $$ 
@@ -106,3 +111,33 @@ gettype = type de variable
 pour creer un tableau, il faut utiliser array ()
 exemple avec $[] pour rajouter un element dans un tableau.
 on peut faire des tableaux dans des tableaux 
+la signature de methode pour la première ligne de la signature
+une fonction doit avoir qu'une seule responsabilité
+* on ne peut pas mettre deux fois la même plus pour une valeur
+*pour les tableaux, il faut mettre des [] pour les afficher.
+*IMPORTANT : METTRE DES VERBES DANS LES METHODES 
+
+Explication de la fonction.
+* la methode de cette fonction est buildRows, important mettre des VERBES
+* Le parametres de la fonction est $titre 
+* Ce parametre prend les informations de $tunisiens que nous avons defini en haut et elle fait apparaitre la fonction Important elle dois etre en dehors de la fonction. (appel de la fonction)
+* POur finir on fait un echo pour afficher le title du parametre $titre qui a les informations de $tunisiens 
+function buildRows($titre){
+			/*echo "<ul>";;
+			echo "<li>".$titre["title"]."<li>";;
+			echo "</ul>";;*/
+			foreach ($titre as $key => $value) {
+			echo "<li>".$value."<li>";;
+			}
+		}
+       buildRows($tunisiens);;
+
+* Pour le foreach = la syntaxe 
+foreach ($variable as $key => $value) {
+	
+}
+	la variable c'est le "nom" du tableau
+	la key, c'est le premier "mot" du tableau avant le =>
+	et la valeur c'est ceux qui a apres.
+
+*$xml = simplexml_load_string($string); c'est la syntaxe pour ranger des xml
