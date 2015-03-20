@@ -37,6 +37,7 @@
 
 			);;
 
+        xml= 
 		$actualites = array($a1, $a2, $a3);
 
 		function buildTable($actualites, $wantedProperties){
