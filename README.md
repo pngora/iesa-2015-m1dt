@@ -86,6 +86,7 @@ deux instructions avec break et continue (mais cela n'est pas recommandable)
 * les parametres pouvent avoir le même nom vu qu'ils sont dans des functions différentes
 * Ne pas oublier de mettre des parametres entre virgule
 
+// dans la function assert, on appelle une autre fonction assert.equal qui a des parametres. le premier parametre doit être le resultat attendu, ensuite c'est la function que l'on veux tester avec le resultat de ses paramaetres (voir exercice sur les tests unitaires / index.02 calculator)
 
 
 #CSS
@@ -156,3 +157,8 @@ pour faire une redirection sur php <?php
 Ne pas oublier le . pour le plus
 
 Ne pas retourner le set pour les dates
+
+integrateur continue : mettre la definition
+test unitaire
+test driven development
+Selenium et jenkins
