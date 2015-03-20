@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="qunit-git.css"/>
+	<script src="qunit-1.17.1.js"></script>
+	<!--<meta http-equiv="refresh" content="20"/>-->
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+<script>
+
+
+QUnit.test("that addition succed",
+		function(assert) {
+			assert.equal(600,add(200,400),"resultat 600"); 
+		}
+	);
+
+QUnit.test("that addition succed",
+		function(assert) {
+			assert.equal(22,add(10,12),"resultat 600"); 
+		}
+	);
+
+function add(parametre1,parametre2){
+  return parametre1+parametre2;
+};
+
+</script>
+</body>
+</html>
