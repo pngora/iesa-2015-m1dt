@@ -1,4 +1,4 @@
-# iesa-2015-m1dt : nom de mon dossier sur GITHUB
+*iesa-2015-m1dt : nom de mon dossier sur GITHUB
 
 # LINKS
 
@@ -9,43 +9,77 @@
 + Article sur les livres numériques : http://www.liberation.fr/culture/2015/03/05/la-france-sommee-de-relever-la-tva-pour-les-livres-numeriques_1214767
 
 
+#GitHub
 
-pour les \"\" quand on a les doubles cotes
+* Git init : Prendre un projet ou un répertoire existant et à l'importer dans Git. Initialisation d'un dépôt Git dans un répertoire existant
+* Git clone + chemin vers le fichier : Cloner un dépôt existant
+* Git rm + chemin vers le fichier : Supprimer un fichier 
+* Git pull : Récuperer les modifications faite sur github 
+* mkdir : pour rajouter un fichier dans un dossier
+* cd .. : pour revenir à la racine du dossier
+* cd + le glisser-deposer du fichier : Permet de rentrer dans un dossier 
+* git checkout .: pour supprimer la précedente sauvegarde
+* Travailler à partir de mon ordinateur : pour cela il faut commencer par faire un git clone ensuite un cd + le chemin vers mon dossier.
+* IMPORTANT : Il faut toujours être à la racine
+
+
 #Liste de code 
+
 * code commençant par 1 : information
 * code commençant par 2 : Succès
 * code commençant par 3 : Redirection
 * code commençant par 4 : Erreur du client 
 * code commençant par 5 : Erreur du serveur / du serveur d'application
 
+# HTML
 
+* l'html est un code qui permet de struturer  
+* Semantique : <header></header><section></section><article></article><aside></aside><footer></footer>
+* En HTML on utilise les \"\" quand on a les doubles côtes
+* Important : il faut bien struturer le code
 
-#GitHub
+#CSS
 
-* Supprimer un fichier : git rm + chemin vers le fichier
-* Git pull : récuperer les modifications faite sur github 
-* mkdir pour rajouter un fichier
-* cd .. pour revenir à la racine du dossier
-* cd + le glisser-deposer du fichier pour rentrer 
-* git checkout . pour supprimer la précedente sauvegarde
-* pour travailler à partir de mon ordinateur pour cela il faut commencer par faire un mkdir ensuite créer un nouveau fichier abec cd avec le nom du fichier (important ne pas oublier de mettre un espace entre le cd et le nom du fichier et ensuite il faut faire git clone.
-* tj etre à la racine
+* text-indent : permet l'indentation de la première ligne
+* letter-spacing: les espaces entre les lettres
+* pour les raccourcis (ex: padding : 10px(top), 20px(right), 15px(bottom), 20px(left))
+* IMPORTANT : lorsqu'il y a pas de px la valeur prend celui de son opposé
+* le border n'est pas le même suivant le navigateur
+
+# Les media queries
+
+* Les media queries sont utilisés pour faire du responsive
+*<link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 640px)" href="screen.css" type="text/css" /> : 
+<ol>
+<li>screen : Écrans </li>
+<li>handheld :Périphériques mobiles ou de petite taille </li>
+<li>print : Impression</li>
+<li>aural (CSS 2.0) / speech (CSS 2.1) : Synthèses vocales</li>
+<li>braille : Plages braille</li>
+<li>embossed : Imprimantes braille</li>
+<li>projection : Projecteurs (ou présentations avec slides)</li>
+<li>tty : Terminal/police à pas fixe</li>
+<li>tv : Téléviseur</li>
+<li>all : Tous les précédents</li>
+</ol>
 
 #JavaScript
 
 * Google Map : mettre des dimensions dans la div
-* pour les commentaires en javascript // pour une ligne et /**/ pour plusieurs lignes
+* Pour les commentaires en javascript // pour une ligne et /**/ pour plusieurs lignes
 * ECMAScript est un langage de programmation de type script standardisé par Ecma International dans le cadre de la spécification ECMA-262. Il s'agit donc d'un standard, dont les spécifications sont mises en œuvre dans différents langages de script, comme JavaScript ou ActionScript, ainsi qu'en C++ (norme 2011). C'est un langage de programmation orienté prototype.
-* Le script est souvent vers la fin du script 
+* Le script est souvent vers la fin du code
 * <script src="#" /> feuille distante
-* Una variable ne peut pas commencer par un chiffre. Camel Case pour deux noms comme nom de variable
+* Une variable ne peut pas commencer par un chiffre. Camel Case pour deux noms comme nom de variable
 * On n'est pas obligé de mettre un var pour definir une nouvelle valeur
 * CASE SENSITIVE 
-* une varible peut avoir plusieurs types (numérique,float,booléen,string)
-* condition : avec les if, les for, while
-* struture du if : if (condition (doit être soit vrai ou faux)){}
-* on peut mettre plusieurs variable dans une console.log avec console.log(a+" "+b) ou console.log(a,b);
+* Une varible peut avoir plusieurs types (numérique,float,booléen,string)
+* On peut mettre plusieurs variable dans une console.log avec console.log(a+" "+b) ou console.log(a,b);
 * il y a plusieurs consoles .error,debug,warn,info
+
+* Conparaison : avec les if, else if et else
+* struture du if : if (condition){}
+* Les boucles : les for, while
 
 
 * Les opérateurs logiques :
@@ -87,19 +121,13 @@ do{}while(condition){}
 for (var i=1; i<10; i++){console.log(i)}
 deux instructions avec break et continue (mais cela n'est pas recommandable)
 * L'interpreteur affiche tj la date de la même façon (voir exo dates.html javascript)
+
 ##functions
-* les parametres pouvent avoir le même nom vu qu'ils sont dans des functions différentes
+* Les parametres pouvent avoir le même nom vu qu'ils sont dans des functions différentes
 * Ne pas oublier de mettre des parametres entre virgule
 
 // dans la function assert, on appelle une autre fonction assert.equal qui a des parametres. le premier parametre doit être le resultat attendu, ensuite c'est la function que l'on veux tester avec le resultat de ses paramaetres (voir exercice sur les tests unitaires / index.02 calculator)
 
-
-#CSS
-* text-indent : permet l'indentation de la première ligne
-* letter-spacing: les espaces entre les lettres
-* pour les raccourcis (ex: padding : 10px(top), 20px(right), 15px(bottom), 20px(left))
-* important lorsqu'il y a pas de px la valeur prend celui de son opposé
-* le border n'est pas le même suivant le navigateur
 
 #PHP
 *echo permet d'afficher 
