@@ -1,9 +1,14 @@
-daringfireball.net/projects/markdown/syntax
-pragprog
+# iesa-2015-m1dt : nom de mon dossier sur GITHUB
 
-les livres numériques : http://www.liberation.fr/culture/2015/03/05/la-france-sommee-de-relever-la-tva-pour-les-livres-numeriques_1214767
+# LINKS
 
-# iesa-2015-m1dt (nom de mon dossier)
++ daringfireball.net/projects/markdown/syntax la syntaxe markdown
+
++ pragprog maison d'édition qui fait des livres sur la programmation
+
++ Article sur les livres numériques : http://www.liberation.fr/culture/2015/03/05/la-france-sommee-de-relever-la-tva-pour-les-livres-numeriques_1214767
+
+
 
 pour les \"\" quand on a les doubles cotes
 #Liste de code 
